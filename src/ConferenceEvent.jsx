@@ -43,11 +43,8 @@ const ConferenceEvent = () => {
 
     const handleMealSelection = (index) => {
         const item = mealsItems[index];
-        if (item.selected ) {
-            dispatch(toggleMealSelection(index));
-        } else {
-            dispatch(toggleMealSelection(index));
-        }
+            
+        dispatch(toggleMealSelection(index));
     };
 
     const getItemsFromTotalCost = () => {
